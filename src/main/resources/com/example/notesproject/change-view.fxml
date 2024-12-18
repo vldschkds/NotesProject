@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: ffba00;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.notesproject.ChangeController">
+    <children>
+        <Label alignment="CENTER" prefHeight="61.0" prefWidth="471.0" text="Изменить заметку" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="40.0" />
+            </font>
+        </Label>
+        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: fafafa;" VBox.vgrow="ALWAYS">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <Label alignment="CENTER" text="Название" translateX="-107.0" translateY="9.0">
+                    <font>
+                        <Font name="Segoe UI" size="17.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nameField" maxWidth="-Infinity" prefHeight="25.0" prefWidth="288.0">
+                    <VBox.margin>
+                        <Insets bottom="2.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label text="Текст" translateX="-126.0" translateY="9.0">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="textArea" maxWidth="-Infinity" prefHeight="139.0" prefWidth="301.0" wrapText="true" />
+                <Button fx:id="finallyChangeButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="299.0" style="-fx-background-color: #fefe22; -fx-background-radius: 10;" text="Изменить">
+                    <VBox.margin>
+                        <Insets top="17.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</VBox>
