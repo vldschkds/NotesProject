@@ -18,7 +18,7 @@
                 <Insets />
             </opaqueInsets>
             <children>
-                <Label text="Автор: Ревунов Артем">
+                <Label text="Автор: Сироткин Владислав">
                     <font>
                         <Font name="Segoe UI" size="20.0" />
                     </font>
